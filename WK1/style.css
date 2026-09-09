@@ -1,0 +1,21 @@
+h1 {
+    color:brown;
+}
+
+body{
+    padding: 20px;
+    background-color: powderblue;
+}
+
+.project__section {
+    width: 50%;
+}
+
+.project__desc{
+    width:50%;
+    display: inline-block;
+}
+
+.project__image{
+    width:32%
+}

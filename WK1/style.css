@@ -5,17 +5,45 @@ h1 {
 body{
     padding: 20px;
     background-color: powderblue;
+    background-image: url('wk1\ 1.png');
+    background-size: cover;
+     font-family: "Kranky", serif;
+     font-weight: 400;
+     font-style: normal;
+   
 }
 
+
 .project__section {
+    width: 20%;
+    margin: 40px 0;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__video {
     width: 50%;
+    min-width: 320px;
 }
 
 .project__desc{
     width:50%;
     display: inline-block;
+    margin:0;
 }
 
 .project__image{
-    width:32%
+    width: 240px;
+}
+
+@media (max-width: 610px){
+    .project__image{
+    width: 320px;
+    margin-top: 20px;
+}
 }

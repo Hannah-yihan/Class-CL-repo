@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#stage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50; 
+    transition: background 1s ease;
+    z-index: 1;
+}
+
+#props {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none; 
+}
+
+.emoji-item {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    pointer-events: auto; 
+    transition: all 0.3s ease;
+    user-select: none; 
+}
+
+.emoji-item:hover {
+    transform: scale(1.2); 
+}
+
+#text {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 3;
+    transition: opacity 0.5s;
+}
+
+#btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+}
+
+#btn:hover {
+    background-color: #d35400;
+}
+
+.hide {
+    display: none !important;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Personality Map Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kranky&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 p5.js 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+    <div id="stage">
+        <div id="bg"></div>
+        <!-- p5.js 画布会在这里生成 -->
+        <div id="p5-container"></div>
+        <div id="text">You are sitting in a warm wooden cabin, watching the snowy scene outside...</div>
+    </div>
+
+    <!-- 题目弹窗 -->
+    <div id="quiz-modal" class="hide">
+        <div class="modal-content">
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options"></div>
+        </div>
+    </div>
+
+    <button id="btn">Open the door</button>
+
+    <!-- 引入数据文件和脚本 -->
+    <script src="data.js"></script>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
